@@ -659,13 +659,14 @@ div.pp_default .pp_previous:hover {
 }
 
 .single-post .cat-links a:hover {
-    color: #f277ae;
+    color: #DEBBCE;
 }
 
 .single-post .cat-links a:after {
-    content: ",";
+    /*content: ",";*/
     display: inline-block;
 }
+
 
 .single-post .cat-links ul li:last-of-type a:after {
     display: none;
