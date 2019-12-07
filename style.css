@@ -1033,7 +1033,7 @@ p.custom-field-class {
         margin-right: 8%;
         float: left;
         position: relative;
-        margin-bottom: 20px;
+        margin-bottom: 60px;
     }
 
     .one_half {
@@ -1042,6 +1042,7 @@ p.custom-field-class {
 
     .one_third {
         width: 28%;
+        text-align: center;
     }
 
     .two_third {
@@ -1049,7 +1050,9 @@ p.custom-field-class {
     }
 
     .one_fourth {
-        width: 19%;
+        width: 10%;
+        text-align: center;
+        font-weight: normal;
     }
 
     .three_fourth {
