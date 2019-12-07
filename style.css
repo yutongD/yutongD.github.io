@@ -316,6 +316,16 @@ div.pp_default .pp_previous:hover {
     text-align: center;
 }
 
+.mid-title {
+    font-size: 30px;
+    /*line-height: 36px;*/
+    font-weight: bold;
+    max-width: 370px;
+    margin: 0 auto;
+    /*padding-bottom: 35px;*/
+    text-align: center;
+}
+
 .blog-item-holder {
     opacity: 0;
     padding: 35px 0;
@@ -530,6 +540,12 @@ div.pp_default .pp_previous:hover {
 
 .single-picture {
     text-align: center;
+}
+
+.half-picture {
+    margin-left: 50px;
+    height: 300px;
+    width: 300px;
 }
 
 .page-desc {
@@ -1027,6 +1043,8 @@ p.custom-field-class {
 
 }
 
+
+
 @media screen and (max-width: 1450px) {
 
     .one_half, .one_third, .two_third, .three_fourth, .one_fourth {
@@ -1036,9 +1054,19 @@ p.custom-field-class {
         margin-bottom: 60px;
     }
 
+    .small-photo {
+        font-size: medium;
+        font-weight: bold;
+        font-family: 'Century Gothic';
+        margin-right: -35px;
+        margin-left: -35px;
+
+    }
+
     .one_half {
         width: 46%;
     }
+
 
     .one_third {
         width: 28%;
@@ -1252,6 +1280,7 @@ p.custom-field-class {
     blockquote.inline-blockquote {
         font-size: 20px;
         line-height: 32px;
+
     }
 
     p.custom-text-class, p.custom-field-class {
@@ -1317,4 +1346,3 @@ p.custom-field-class {
     margin-left: auto;
     margin-right: auto;
 }
-
