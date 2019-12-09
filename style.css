@@ -1093,7 +1093,7 @@ p.custom-field-class {
 
     .body-wrapper {
         margin: 20px;
-        height: 10000px;
+        height: 15000px;
     }
 
     .menu-wraper {
@@ -1105,6 +1105,7 @@ p.custom-field-class {
         margin: 50px 0;
         width: auto;
     }
+
 
     .grid-sizer, .grid-item {
         width: 340px;
@@ -1134,7 +1135,7 @@ p.custom-field-class {
         width: 640px;
     }
 
-    blockquote:before {
+    inline-blockquote {
         line-height: 150px;
         font-size: 150px;
         position: relative;
@@ -1284,6 +1285,8 @@ p.custom-field-class {
 
     }
 
+
+
     p.custom-text-class, p.custom-field-class {
         display: block !important;
     }
@@ -1322,7 +1325,13 @@ p.custom-field-class {
         line-height: 110px;
         font-size: 110px;
     }
+
+    blockquote:after {
+        line-height: 110px;
+        font-size: 110px;
+    }
 }
+
 
 
 @media screen and (max-width: 650px) {

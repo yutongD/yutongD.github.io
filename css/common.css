@@ -219,7 +219,7 @@ blockquote
     position: relative;
     z-index: 2;
 }
-blockquote:before 
+.before-quote:before
 {
     content: "\201C";
     font-size: 250px;
@@ -232,6 +232,21 @@ blockquote:before
     z-index: 1;
     font-weight: 900;
 }
+
+.after-quote:after
+{
+    content:"\201D";
+    font-size: 250px;
+    line-height: 0;
+    font-family: Arial, sans-serif;
+    color: #f4f4f4;
+    position: absolute;
+    top: 120px;
+    right: -40px;
+    z-index: 1;
+    font-weight: 900;
+}
+
 blockquote.inline-blockquote
 {
     width: 480px;
