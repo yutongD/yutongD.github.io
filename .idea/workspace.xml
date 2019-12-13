@@ -54,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mooc.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="194" column="33" lean-forward="true" selection-start-line="194" selection-start-column="33" selection-end-line="194" selection-end-column="33" />
+            <state relative-caret-position="168">
+              <caret line="190" column="28" selection-start-line="190" selection-start-column="28" selection-end-line="190" selection-end-column="28" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -256,12 +256,12 @@
       <workItem from="1576029014356" duration="16103000" />
       <workItem from="1576116034273" duration="11061000" />
       <workItem from="1576147379557" duration="2930000" />
-      <workItem from="1576151097687" duration="12796000" />
+      <workItem from="1576151097687" duration="13126000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113201000" />
+    <option name="totallyTimeSpent" value="113531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -417,8 +417,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mooc.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="194" column="33" lean-forward="true" selection-start-line="194" selection-start-column="33" selection-end-line="194" selection-end-column="33" />
+        <state relative-caret-position="168">
+          <caret line="190" column="28" selection-start-line="190" selection-start-column="28" selection-end-line="190" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
