@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="743eac1f-3356-4eff-bcc1-622f8e168028" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mooc.html" beforeDir="false" afterPath="$PROJECT_DIR$/mooc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blossom.html" beforeDir="false" afterPath="$PROJECT_DIR$/blossom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,19 +33,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-268">
-              <caret line="94" column="80" lean-forward="true" selection-start-line="94" selection-start-column="80" selection-end-line="94" selection-end-column="80" />
+            <state relative-caret-position="52">
+              <caret line="110" column="41" selection-start-line="110" selection-start-column="41" selection-end-line="110" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blossom.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="413" column="115" lean-forward="true" selection-start-line="413" selection-start-column="115" selection-end-line="413" selection-end-column="115" />
+            <state relative-caret-position="100">
+              <caret line="70" column="44" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -76,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spammer.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
@@ -171,10 +170,10 @@
         <option value="$PROJECT_DIR$/more.html" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/style_mooc.css" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/blossom.html" />
         <option value="$PROJECT_DIR$/mooc.html" />
         <option value="$PROJECT_DIR$/spammer.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/blossom.html" />
       </list>
     </option>
   </component>
@@ -262,18 +261,18 @@
       <workItem from="1576147379557" duration="2930000" />
       <workItem from="1576151097687" duration="17799000" />
       <workItem from="1576303314734" duration="594000" />
-      <workItem from="1576397495280" duration="11645000" />
+      <workItem from="1576397495280" duration="11883000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130443000" />
+    <option name="totallyTimeSpent" value="130681000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21785174" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21785174" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -290,7 +289,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.494705" visible="true" weight="0.37540984" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.494705" visible="true" weight="0.37540984" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.505295" side_tool="true" visible="true" weight="0.37540984" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -410,24 +409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-268">
-          <caret line="94" column="80" lean-forward="true" selection-start-line="94" selection-start-column="80" selection-end-line="94" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blossom.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="413" column="115" lean-forward="true" selection-start-line="413" selection-start-column="115" selection-end-line="413" selection-end-column="115" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mooc.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -465,6 +446,23 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#blockquote#0;n#div#0;n#div#1;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#9520#9546#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="110" column="41" selection-start-line="110" selection-start-column="41" selection-end-line="110" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blossom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="70" column="44" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
