@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <title>Yutong Deng</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Template by Dry Themes"/>
+    <meta name="keywords" content="HTML, CSS, JavaScript, PHP"/>
+    <meta name="author" content="DryThemes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i,900%7CMontserrat:400,700%7CPT+Serif'
+          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href='css/clear.css'/>
+    <link rel="stylesheet" type="text/css" href='css/common.css'/>
+    <link rel="stylesheet" type="text/css" href='css/font-awesome.min.css'/>
+    <link rel="stylesheet" type="text/css" href='css/carouFredSel.css'/>
+    <link rel="stylesheet" type="text/css" href='css/prettyPhoto.css'/>
+    <link rel="stylesheet" type="text/css" href='css/sm-clean.css'/>
+    <link rel="stylesheet" type="text/css" href='style_mooc.css'/>
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154146632-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-154146632-1');
+    </script>
+
+</head>
+<body class="post single-post">
+
+<table class="doc-loader">
+    <tbody>
+    <tr>
+        <td>
+            <img src="images/ajax-document-loader.gif" alt="Loading...">
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<div class="menu-wraper center-relative">
+    <div class="menu-logo center-text">
+        <a href="index.html">
+            <img src="images/reopenDefaultLogo.png" alt="Reopen"/>
+        </a>
+    </div>
+    <nav id="header-main-menu" class="big-menu">
+        <ul class="main-menu sm sm-clean">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href=" ">About</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="clear"></div>
+</div>
+
+
+<div class="body-wrapper">
+
+    <div style="top: 0px;left:0px; ">
+        <a href="mooc.html"> <span style="position: absolute; top:80px; left: 50px;"><img
+                src="images/blossom/left-arrow.png" height="40px" width="40px"> </span> </a>
+    </div>
+
+    <div class="header-holder center-relative relative">
+        <div class="toggle-holder absolute">
+            <div id="toggle">
+                <div class="first-menu-line"></div>
+                <div class="second-menu-line"></div>
+                <div class="third-menu-line"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="content" class="site-content center-relative">
+        <article style="font-weight: 300">
+            <div class="center-relative clear">
+
+                <h1 class="entry-title" style="padding-top: 200px;margin-bottom: 10px">
+                    <div class="single-picture" style="margin-bottom: 50px">
+                        <img src="https://img.icons8.com/wired/64/000000/hacker.png" style="width: 80px">
+                    </div>
+                    SPAMMER DETECTION
+                </h1>
+                <div class="post-info" style="margin-left: -80px">
+                    <div class="cat-links" style="margin-left: 80px">
+                        <ul>
+                            <li><a href="#">Data Mining</a></li>
+                        </ul>
+                    </div>
+                    <div class="cat-links">
+                        <ul>
+                            <li><a href="#">JULY 2019</a></li>
+                        </ul>
+                    </div>
+                    <div class="cat-links">
+                        <ul>
+                            <a href="#">Tensorflow</a>
+                        </ul>
+                    </div>
+                    <br><br>
+                </div>
+                <div class="entry-content">
+                    <div class="content-wrap">
+                        <h2><b>INTRODUCTION</b></h2>
+                        <p>Customers make a lot of reviews on online websites, e.g., Amazon and Yelp. Reviews
+                            straightforwardly influence the decisions of customers, which have become a target for
+                            spammers to publish malicious and fake information. The news from BBC in 2013 has shown that
+                            nearly 25% of Yelp reviews could be fake [1], which remains far from fully solved now. </p>
+                        <br>
+                        <p>However, It can be difficult for human readers to distinguish them from truthful reviews, the
+                            average accuracy of three human judges is only 57.33% [2], only slightly better than random.
+                            It can be expensive to detect spam manually over large review texts. We need to find
+                            technical solutions to spot spammers automatically.</p>
+                        <br>
+                        <p>To gain insight into the issue, I conducted research and experiments on the Chinese
+                            restaurant review app, <i>Dianping</i>.</p>
+                        <br><br>
+                        <h2>CHALLENGE</h2>
+                        <h4>Review itself is diverse</h4>
+                        <p>We can find some obvious abnormal patterns such as “Love this place”, “Great food”, and
+                            “Great service”. Actually, there are many different patterns, such as emotional tendency,
+                            writing habit or mentioned aspect, which appear in mixed behaviors. It is hard to identify a
+                            fixed behavior pattern or decide which characteristic is critical, which presents great
+                            challenges to detect spammers. Here is an example:</p>
+                        <br><br>
+                        <blockquote class="inline-blockquote before-quote">
+                            <p style="color: #AA84AA;font-family: 'Century Gothic';font-size: larger;">
+                                The <b>food, wine, and service</b> are as <b>good</b> as everyone says.
+                                Good <b>noise</b> level, fancy but not too fancy. <b>Price</b> - $200+ for the dinner.
+                                <b>Food allergies</b>? - They happily accommodate them in such a seamless way that you
+                                don't even notice.
+                                <b>Pretentiousness of servers</b> - Not a problem at all.
+                                <b>Birthday treat</b>? - Yes! Delicious little truffle cake thing.</p>
+                        </blockquote>
+                        <br><br><h4>Adversarial actions</h4>
+                        <p>Spammers are smart and everywhere. Many hidden fake reviews are mixed with real reviews, and
+                            at a glance, there is no difference between them. </p>
+                        <br><br>
+                        <h2>INSIGHTS</h2>
+                        <p>Broadly speaking, review spam falls into two categories. The first is people who are trying
+                            to make their own business look good. The second is people who are trying to hurt others.
+                            Most of the reviews on <i>Dianping</i> is the latter.
+                            After observation on raw review contents on <i>Dianping</i>, I determined four influential
+                            factors to generate a multi-view schema from scratch:</p>
+                        <br><h4>Emotion</h4>
+                        <p>I simply divided emotions into positive, negative and normal emotions. The emotional tendency
+                            of fake reviews differs with various review platforms. In all spam reviews, negative reviews
+                            are about three times as positive.
+                        </p>
+                        <h4>Aspect</h4>
+                        <p>Generally, like the above example, reviews involve aspects, such as service, food, price,
+                            hygiene, etc. Spammers may have specific tendency to aspect since they have the same
+                            goal. </p>
+                        <h4>IP Address</h4>
+                        <p>An IP can be suspicious or normal. I found a strong intuition that reviews from the same user
+                            or IP address tend to have similar behaviors. Spammers target to maximize profits and they
+                            write as many fake reviews as possible. Therefore they may use the same user account and IP
+                            address to write multiple reviews.
+                        </p>
+                        <h4>Rank</h4>
+                        <p>Many users are accustomed to filtering restaurants by rank, so the star is also an important
+                            factor to consider. Most spammers rate one star or five stars to affect the overall rating
+                            as much as possible.
+                        </p><br><br>
+                        <h2>A MULTI-VIEW GCN FRAMEWORK</h2><br>
+                        <p><img src="images/spammer/karate.png" style="margin-left: 100px"></p><br><br>
+                        <p>I extracted the above four attributes (views) for each reviewer. But it’s not enough, I asked
+                            myself how to maximize the review feature utility of each reviewer. Graph models came into
+                            my mind. Graph means connections, which connect similar nodes together. It enables nodes to
+                            use additional useful information from neighbors to gain better performance.</p>
+                        <br>
+                        <p><b>After repeatedly polishing my idea, I proposed a multi-view GCN framework for spammer
+                            detection.</b></p>
+
+                        <br><h4>Neighbor Selection</h4>
+                        <p>After experiments on diverse graph datasets, I discovered that GCN performs better when
+                            neighboring nodes of the graph are highly similar and the adjacency matrix is neither too
+                            dense nor too sparse. </p>
+                        <br>
+                        <p>More importantly, neighbors sharing similar attributes is critical to GCN’s performance.
+                            Dissimilar neighbor brings noisy to representation learning. Therefore, I conducted the
+                            similarity-based neighbor selection in multiple dimensions to ensure the similarity between
+                            neighbors. For example, reviewers who share an IP address are connected in the corresponding
+                            graph, and reviewers who share positive emotions are connected in the emotion graph.
+                            In this way, we can get high-quality graph networks that well-suited for graph embedding.
+                        </p><br>
+                        <h4>Graph Embedding</h4>
+                        <p>From the above steps, we obtained four adjacency matric. I adopted Graph Convolutional
+                            Network (GCN) [3] for graph embedding. Unlike the standard neural network, nodes in GCN
+                            capture the neighbor’s properties and properties aggregate during the convolution operation.
+                            The network tries to learn the embedding for each of the nodes through mutual sharing of
+                            data among the nodes’ neighbors in an iterative manner until convergence..</p>
+                        <br>
+                        <p>Furthermore, I gained amazing findings. In our application scenario, the graph network can
+                            leverage the relational ties between users with minimal to no external information. In other
+                            words, it performs better when nodes attribute is replaced by adjacency matrix. This change
+                            enables GCN to learn global structural relational information (the whole graph), which
+                            further improve the feature utility. </p>
+                        <br><h4>Classifier </h4>
+                        <p>The last step is to add a LR classifier or XGB classifier. The classifier utilizes embedding
+                            from four views collectively to output the label of reviewers .
+                        </p><br><br>
+                        <h2>ADVANTAHES</h2>
+                        <p>(1) The framework identify explicit or latent connections between spammers from reviews
+                            characteristic in multiple views, which maximizes review utility and improve the
+                            accuracy. </p>
+                        <br><p>(2) The framework exhibits a good performance with only a small amount of training data (1%)
+                            which alleviates the costly labeling problem.</p>
+                        <br><p>(3) It is an end-to-end learning framework. It takes labeled nodes and the graph as the input
+                            and output the predicted classes of unlabeled nodes</p>
+                        <br><h2>REFERENCE</h2>
+                        <p>[1] http://www.bbc.com/news/technology-24299742</p>
+                        <p>[2] Myle Ott, Yejin Choi, Claire Cardie, and Jeffrey T Hancock. 2011. Finding deceptive
+                            opinion spam by any stretch of the imagination. In Proceedings of the 49th Annual Meeting of
+                            the Association for Computational Linguistics: Human Language Technologies, pages
+                            309–319.</p>
+                        <p>[3] Thomas N Kipf and Max Welling. 2017. Semi-supervised classification with graph
+                            convolutional networks. In 5th International Conference on Learning Representations,
+                            ICLR. </p><br><br>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="content-970 center-relative">
+        <ul>
+            <li class="copyright-footer">
+                2019 © Yutong Deng
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<!-- End .body-border -->
+
+
+<!--Load JavaScript-->
+<script src="js/jquery.js"></script>
+<script src='js/jquery.fitvids.js'></script>
+<script src='js/jquery.smartmenus.min.js'></script>
+<script src='js/isotope.pkgd.js'></script>
+<script src='js/imagesloaded.pkgd.js'></script>
+<script src='js/isotope.pkgd.js'></script>
+<script src='js/jquery.carouFredSel-6.0.0-packed.js'></script>
+<script src='js/jquery.mousewheel.min.js'></script>
+<script src='js/jquery.touchSwipe.min.js'></script>
+<script src='js/jquery.easing.1.3.js'></script>
+<script src='js/imagesloaded.pkgd.js'></script>
+<script src='js/jquery.prettyPhoto.js'></script>
+<script src='js/jquery.nicescroll.min.js'></script>
+<script src='js/main.js'></script>
+</body>
+</html>
