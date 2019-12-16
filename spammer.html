@@ -186,7 +186,7 @@
                         <br>
                         <p><b>After repeatedly polishing my idea, I proposed a multi-view GCN framework for spammer
                             detection.</b></p>
-
+                        <div><img src="images/spammer/framework.png"></div>
                         <br><h4>Neighbor Selection</h4>
                         <p>After experiments on diverse graph datasets, I discovered that GCN performs better when
                             neighboring nodes of the graph are highly similar and the adjacency matrix is neither too
@@ -199,6 +199,15 @@
                             graph, and reviewers who share positive emotions are connected in the emotion graph.
                             In this way, we can get high-quality graph networks that well-suited for graph embedding.
                         </p><br>
+                        <div class="one_half ">
+                            <img src="images/spammer/ip.png">
+                            <p style="font-size:medium">Reviewer e1, e3, e5 have posted positive review; e4, e5, e6 have posted negative review; e1, e2 have posted normal review.</p>
+                        </div>
+                        <div class="one_half last ">
+                            <img src="images/spammer/emotion.png">
+                            <p style="font-size:medium">Reviewer e1, e2, e3 have used IP address 1; e4, e5, e6 have used IP address 2; e2 and e4 have used IP address 3.</p>
+                       </div>
+                        <div class="clear"></div>
                         <h4>Graph Embedding</h4>
                         <p>From the above steps, we obtained four adjacency matric. I adopted Graph Convolutional
                             Network (GCN) [3] for graph embedding. Unlike the standard neural network, nodes in GCN
@@ -222,7 +231,7 @@
                         <br><p>(2) The framework exhibits a good performance with only a small amount of training data (1%)
                             which alleviates the costly labeling problem.</p>
                         <br><p>(3) It is an end-to-end learning framework. It takes labeled nodes and the graph as the input
-                            and output the predicted classes of unlabeled nodes</p>
+                            and output the predicted classes of unlabeled nodes.</p>
                         <br><h2>REFERENCE</h2>
                         <p>[1] http://www.bbc.com/news/technology-24299742</p>
                         <p>[2] Myle Ott, Yejin Choi, Claire Cardie, and Jeffrey T Hancock. 2011. Finding deceptive
