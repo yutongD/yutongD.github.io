@@ -159,13 +159,13 @@
                             factors to generate a multi-view schema from scratch:</p>
                         <br><h4>Emotion</h4>
                         <p>I simply divided emotions into positive, negative and normal emotions. The emotional tendency
-                            of fake reviews differs with various review platforms. In all spam reviews, negative reviews
-                            are about three times as positive.
+                            of fake reviews differs with various review platforms. Among all spam reviews, negative
+                            reviews are about three times as positive.
                         </p>
                         <h4>Aspect</h4>
                         <p>Generally, like the above example, reviews involve aspects, such as service, food, price,
-                            hygiene, etc. Spammers may have specific tendency to aspect since they have the same
-                            goal. </p>
+                            hygiene, etc. Spammers may have a specific tendency to aspect since they have the same
+                            goal.</p>
                         <h4>IP Address</h4>
                         <p>An IP can be suspicious or normal. I found a strong intuition that reviews from the same user
                             or IP address tend to have similar behaviors. Spammers target to maximize profits and they
@@ -193,7 +193,7 @@
                             dense nor too sparse. </p>
                         <br>
                         <p>More importantly, neighbors sharing similar attributes is critical to GCN’s performance.
-                            Dissimilar neighbor brings noisy to representation learning. Therefore, I conducted the
+                            Dissimilar neighbors bring noisy to representation learning. Therefore, I conducted the
                             similarity-based neighbor selection in multiple dimensions to ensure the similarity between
                             neighbors. For example, reviewers who share an IP address are connected in the corresponding
                             graph, and reviewers who share positive emotions are connected in the emotion graph.
@@ -201,12 +201,15 @@
                         </p><br>
                         <div class="one_half ">
                             <img src="images/spammer/ip.png">
-                            <p style="font-size:medium">Reviewer e1, e3, e5 have posted positive review; e4, e5, e6 have posted negative review; e1, e2 have posted normal review.</p>
+                            <p style="font-size:medium">Reviewer e1, e3, e5 have posted positive reviews; e4, e5, e6
+                                have
+                                posted negative reviews; e1, e2 have posted normal reviews.</p>
                         </div>
                         <div class="one_half last ">
                             <img src="images/spammer/emotion.png">
-                            <p style="font-size:medium">Reviewer e1, e2, e3 have used IP address 1; e4, e5, e6 have used IP address 2; e2 and e4 have used IP address 3.</p>
-                       </div>
+                            <p style="font-size:medium">Reviewer e1, e2, e3 have used IP address 1; e4, e5, e6 have used
+                                IP address 2; e2 and e4 have used IP address 3.</p>
+                        </div>
                         <div class="clear"></div>
                         <h4>Graph Embedding</h4>
                         <p>From the above steps, we obtained four adjacency matric. I adopted Graph Convolutional
@@ -219,20 +222,49 @@
                             leverage the relational ties between users with minimal to no external information. In other
                             words, it performs better when nodes attribute is replaced by adjacency matrix. This change
                             enables GCN to learn global structural relational information (the whole graph), which
-                            further improve the feature utility. </p>
+                            further improves the feature utility. </p>
                         <br><h4>Classifier </h4>
-                        <p>The last step is to add a LR classifier or XGB classifier. The classifier utilizes embedding
+                        <p>The last step is to add a Logistic Regression classifier or XGB classifier. The classifier
+                            utilizes embedding
                             from four views collectively to output the label of reviewers .
                         </p><br><br>
-                        <h2>ADVANTAHES</h2>
-                        <p>(1) The framework identify explicit or latent connections between spammers from reviews
+                        <h2>ADVANTAGES</h2>
+                        <p>(1) The framework identifies explicit or latent connections between spammers from reviews
                             characteristic in multiple views, which maximizes review utility and improve the
                             accuracy. </p>
-                        <br><p>(2) The framework exhibits a good performance with only a small amount of training data (1%)
+                        <br>
+                        <p>(2) The framework exhibits a good performance with only a small amount of training data (1%)
                             which alleviates the costly labeling problem.</p>
-                        <br><p>(3) It is an end-to-end learning framework. It takes labeled nodes and the graph as the input
+                        <br>
+                        <p>(3) It is an end-to-end learning framework. It takes labeled nodes and the graph as the input
                             and output the predicted classes of unlabeled nodes.</p>
-                        <br><h2>REFERENCE</h2>
+                        <br>
+                        <h2>TAKEAWAYS</h2>
+                        <p>My work is in Chinese patent pending status, and currently I am diligently conducting further
+                            experiments to prepare a paper for SIGKDD 2020. During this experience, my professional
+                            skills and self-awareness are greatly improved.</p>
+                        <br>
+                        <p>Before I went to the United States to do lab research in summer 2019, I thought it was a very
+                            challenging thing for me because I was inexperienced in scientific research and had never
+                            gone abroad alone. Fortunately, I also believe that even the biggest challenges are made up
+                            of small challenges, and there is no reason to give up when opportunities come. I finished a
+                            series of preparation for going to the United States by myself. At the beginning of my
+                            research life, I always failed to keep up with group discussions, which made me feel
+                            frustrated and stressed. </p>
+                        <br>
+                        <p>A Ph.D. student told me that when you read 100 papers of this field, you are just getting
+                            started, and the accumulation of this amount is essential. After reading many papers and
+                            related experiments, I had a general understanding of the graph network and got a general
+                            understanding of what "good" ideas are. On this basis, I started to put forward my ideas and
+                            independently conduct research. Gradually I was able to make contributions to our team.</p>
+                        <br>
+                        <p>This short summer research experience made me understand that challenges themselves are not
+                            difficult, but the real challenge for me is to constantly adjust my attitude towards them.
+                            And I made it!
+                        </p>
+                        <br>
+                        <p> I LIKE THIS CHALLENGE. 😊 </p><br>
+                        <h2>REFERENCE</h2>
                         <p>[1] http://www.bbc.com/news/technology-24299742</p>
                         <p>[2] Myle Ott, Yejin Choi, Claire Cardie, and Jeffrey T Hancock. 2011. Finding deceptive
                             opinion spam by any stretch of the imagination. In Proceedings of the 49th Annual Meeting of
