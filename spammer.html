@@ -117,26 +117,29 @@
                 <div class="entry-content">
                     <div class="content-wrap">
                         <h2><b>INTRODUCTION</b></h2>
-                        <p>Customers make a lot of reviews on online websites, e.g., Amazon and Yelp. Reviews
-                            straightforwardly influence the decisions of customers, which have become a target for
-                            spammers to publish malicious and fake information. The news from BBC in 2013 has shown that
-                            nearly 25% of Yelp reviews could be fake [1], which remains far from fully solved now. </p>
+                        <p>Customers review many different products and services on websites, e.g., Amazon and Yelp.
+                            These reviews influence the decisions of other customers. As a result, spammers have become
+                            incentivized to publish fake reviews. The BBC, in 2013, reported that nearly 25% of Yelp
+                            reviews could be fake [1].
+                        </p>
                         <br>
-                        <p>However, It can be difficult for human readers to distinguish them from truthful reviews, the
-                            average accuracy of three human judges is only 57.33% [2], only slightly better than random.
-                            It can be expensive to detect spam manually over large review texts. We need to find
-                            technical solutions to spot spammers automatically.</p>
+                        <p>However, it can be difficult for users to distinguish fake from honest reviews—the average
+                            accuracy of
+                            three human judges was only 57.33% [2]. It can also be expensive to detect spam by manually
+                            reviewing content. So, we need to find technical solutions to automatically spot
+                            spammers.</p>
                         <br>
-                        <p>To gain insight into the issue, I conducted research and experiments on the Chinese
+                        <p>
+                            To gain an insight into this issue, I conducted research and experiments on the Chinese
                             restaurant review app, <i>Dianping</i>.</p>
                         <br><br>
-                        <h2>CHALLENGE</h2>
-                        <h4>Review itself is diverse</h4>
-                        <p>We can find some obvious abnormal patterns such as “Love this place”, “Great food”, and
-                            “Great service”. Actually, there are many different patterns, such as emotional tendency,
-                            writing habit or mentioned aspect, which appear in mixed behaviors. It is hard to identify a
-                            fixed behavior pattern or decide which characteristic is critical, which presents great
-                            challenges to detect spammers. Here is an example:</p>
+                        <h2>THE CHALLENGE</h2>
+                        <h4>The reviews themselves are diverse</h4>
+                        <p>We can find some obvious abnormal patterns that keep coming up, such as “Love this place,” “Great food,” and
+                            “Great service.” Actually, there are many additional patterns, such as emotional tendencies,
+                            writing habits, or mentioned aspects, which appear in mixed behaviors. It is hard to
+                            identify a fixed behavior pattern or decide which characteristic is critical. This makes
+                            detecting spammers a challenge. Here is an example:</p>
                         <br><br>
                         <blockquote class="inline-blockquote before-quote">
                             <p style="color: #AA84AA;font-family: 'Century Gothic';font-size: larger;">
@@ -154,75 +157,78 @@
                         <h2>INSIGHTS</h2>
                         <p>Broadly speaking, review spam falls into two categories. The first is people who are trying
                             to make their own business look good. The second is people who are trying to hurt others.
-                            Most of the reviews on <i>Dianping</i> is the latter.
-                            After observation on raw review contents on <i>Dianping</i>, I determined four influential
-                            factors to generate a multi-view schema from scratch:</p>
+                            Most of the reviews on <i>Dianping</i> are the latter. After studying raw review content on
+                            <i>Dianping</i>, I settled on four influential factors for generating a multi-view schema
+                            from
+                            scratch:</p>
                         <h4>Emotion</h4>
-                        <p>I simply divided emotions into positive, negative and normal emotions. The emotional tendency
-                            of fake reviews differs with various review platforms. Among all spam reviews, negative
-                            reviews are about three times as positive.
+                        <p>I divided emotions into positive, negative, and normal emotions. The emotional tendency of
+                            fake reviews differs between various review platforms. Among all spam reviews, negative
+                            reviews appear about three times more often as positive ones.
                         </p>
-                        <h4>Aspect</h4>
-                        <p>Generally, like the above example, reviews involve aspects, such as service, food, price,
-                            hygiene, etc. Spammers may have a specific tendency to aspect since they have the same
-                            goal.</p>
-                        <h4>IP Address</h4>
-                        <p>An IP can be suspicious or normal. I found a strong intuition that reviews from the same user
-                            or IP address tend to have similar behaviors. Spammers target to maximize profits and they
-                            write as many fake reviews as possible. Therefore they may use the same user account and IP
-                            address to write multiple reviews.
+                        <h4>Aspects</h4>
+                        <p>Generally, like the above example, reviews involve particular aspects, such as service, food,
+                            price, hygiene, etc. Spammers may tend to focus on particular aspects since they have the
+                            same goal.</p>
+                        <h4>IP address</h4>
+                        <p>An IP can be suspicious or normal. Reviews from the same user or IP address tend to exhibit
+                            similar behaviors. Spammers aim to maximize profits and they write as many fake reviews as
+                            possible. Therefore, they may use the same user account and IP address to write multiple
+                            reviews.
                         </p>
                         <h4>Rank</h4>
-                        <p>Many users are accustomed to filtering restaurants by rank, so the star is also an important
-                            factor to consider. Most spammers rate one star or five stars to affect the overall rating
-                            as much as possible.
+                        <p>Many users are accustomed to filtering restaurants by rank, so the number of stars is another
+                            important factor to consider. Most spammers rate either one star or five stars to affect the
+                            overall ranking as much as possible.
                         </p><br><br>
                         <h2>A MULTI-VIEW GCN FRAMEWORK</h2><br>
                         <p><img src="images/spammer/karate.png" style="margin-left: 150px"></p><br><br>
-                        <p>I extracted the above four attributes (views) for each reviewer. But it’s not enough, I asked
-                            myself how to maximize the review feature utility of each reviewer. Graph models came into
-                            my mind. Graph means connections, which connect similar nodes together. It enables nodes to
-                            use additional useful information from neighbors to gain better performance.</p>
+                        <p>I extracted the above four attributes from reviews. But, it was not enough. I asked
+                            myself how to maximize the review feature utility of each reviewer and I thought about graph
+                            models. A graph means connections that connect similar nodes together. It enables nodes to
+                            use additional useful information from neighbors to obtain better information.</p>
                         <br>
-                        <p><b>After repeatedly polishing my idea, I proposed a multi-view GCN framework for spammer
-                            detection.</b></p>
+                        <p><b>After repeatedly polishing the idea with team members, we proposed a Multi-View Graph Convolutional Network
+                            (GCN) framework for spammer detection.</b></p>
                         <div><img src="images/spammer/framework.png"></div>
                         <br><h4>Neighbor Selection</h4>
                         <p>After experiments on diverse graph datasets, I discovered that GCN performs better when
                             neighboring nodes of the graph are highly similar and the adjacency matrix is neither too
                             dense nor too sparse. </p>
                         <br>
-                        <p>More importantly, neighbors sharing similar attributes is critical to GCN’s performance.
-                            Dissimilar neighbors bring noisy to representation learning. Therefore, I conducted the
+                        <p>More importantly, neighbors sharing similar attributes are critical to GCN’s performance.
+                            Dissimilar neighbors bring noise to representational learning. Therefore, I conducted the
                             similarity-based neighbor selection in multiple dimensions to ensure the similarity between
-                            neighbors. For example, reviewers who share an IP address are connected in the corresponding
-                            graph, and reviewers who share positive emotions are connected in the emotion graph.
-                            In this way, we can get high-quality graph networks that well-suited for graph embedding.
+                            neighbors. For example, reviewers who shared an IP address were connected in the
+                            corresponding graph, and reviewers who shared positive emotions were connected in the
+                            emotion graph. In this way, we could get high-quality graph networks that were well suited
+                            for graph embedding.
                         </p><br>
                         <div class="one_half ">
                             <img src="images/spammer/ip.png">
-                            <p style="font-size:medium">Reviewer e1, e3, e5 have posted positive reviews; e4, e5, e6
+                            <p style="font-size:medium">Reviewers e1, e3, e5 have posted positive reviews; e4, e5, e6
                                 have
                                 posted negative reviews; e1, e2 have posted normal reviews.</p>
                         </div>
                         <div class="one_half last ">
                             <img src="images/spammer/emotion.png">
-                            <p style="font-size:medium">Reviewer e1, e2, e3 have used IP address 1; e4, e5, e6 have used
+                            <p style="font-size:medium">Reviewers e1, e2, e3 have used IP address 1; e4, e5, e6 have used
                                 IP address 2; e2 and e4 have used IP address 3.</p>
                         </div>
                         <div class="clear"></div>
                         <h4>Graph Embedding</h4>
-                        <p>From the above steps, we obtained four adjacency matric. I adopted Graph Convolutional
-                            Network (GCN) [3] for graph embedding. Unlike the standard neural network, nodes in GCN
-                            capture the neighbor’s properties and properties aggregate during the convolution operation.
-                            The network tries to learn the embedding for each of the nodes through mutual sharing of
-                            data among the nodes’ neighbors in an iterative manner until convergence..</p>
+                        <p>From the above steps, we obtained four adjacency matrices. I adopted GCN [3] for graph
+                            embedding. Unlike the standard neural network, the nodes in GCN capture the neighbor’s
+                            properties and properties aggregate during the convolution operation. The network tries to
+                            learn the embedding for each of the nodes, through mutual sharing of data among the nodes’
+                            neighbors, in an iterative manner until convergence.</p>
                         <br>
-                        <p>Furthermore, I gained amazing findings. In our application scenario, the graph network can
-                            leverage the relational ties between users with minimal to no external information. In other
-                            words, it performs better when nodes attribute is replaced by adjacency matrix. This change
-                            enables GCN to learn global structural relational information (the whole graph), which
-                            further improves the feature utility. </p>
+                        <p>Furthermore, I made two amazing findings. In my application scenario, the graph network can
+                            leverage the
+                            relational ties between users with minimal to no external information. In other words, it
+                            performs better when nodes' attributes are replaced by an adjacency matrix. This change enables
+                            GCN to learn global structural relational information (the whole graph), which further
+                            improves the feature utility.</p>
                         <br><h4>Classifier </h4>
                         <p>The last step is to add a Logistic Regression classifier or XGB classifier. The classifier
                             utilizes embedding
@@ -240,35 +246,35 @@
                             and output the predicted classes of unlabeled nodes.</p>
                         <br>
                         <h2>TAKEAWAYS</h2>
-                        <p>My work is in Chinese patent pending status, and currently I am diligently conducting further
-                            experiments to prepare a paper for SIGKDD 2020. During this experience in the United States,
-                            my professional
-                            skills and self-awareness are greatly improved.</p>
+                        <p>My work is in Chinese patent pending status, and I am currently conducting further
+                            experiments to prepare a paper for SIGKDD 2020, a top data mining conference. During this experience since summer, my professional
+                            skills and self-awareness were greatly improved.</p>
                         <br>
-                        <p>Before I went to the United States to do lab research in summer 2019, I thought it was a very
-                            challenging thing for me because I was inexperienced in scientific research and had never
-                            gone abroad alone. Fortunately, I also believe that even the biggest challenges are made up
-                            of small challenges, and there is no reason to give up when opportunities come. I finished a
-                            series of preparation for going to the United States by myself. At the beginning of my
+                        <p>Before I went to the United States to do lab research in summer 2019, I was inexperienced in
+                            scientific research and had never gone abroad alone. These were challenges for me.
+                            Fortunately, I believe that the biggest challenges are made up of small challenges, and
+                            there is no reason to give up when opportunities come my way. I finished the preparation for
+                            going to the United States by myself. At the beginning of my
                             research life, I always failed to keep up with group discussions, which made me feel
-                            frustrated and stressed. </p>
+                            frustrated and stressed.
+                        </p>
                         <br>
-                        <p>A Ph.D. student told me that when you read 100 papers of this field, you are just getting
-                            started, and the accumulation of this amount is essential. After reading many papers and
-                            related experiments, I had a general understanding of the graph network and got a general
-                            understanding of what "good" ideas are. On this basis, I started to put forward my ideas and
-                            independently conduct research. Gradually I was able to make contributions to our team.</p>
+                        <p>A PhD student told me that when you read 100 papers in this field, you are just getting
+                            started, and it is the accumulation of the amount you read that is essential. After reading
+                            many papers and documents on related experiments, I developed a general understanding of the
+                            graph network and of what "good" ideas are. On this basis, I started to put forward my ideas
+                            and independently conduct research. Gradually I was able to contribute to our team.</p>
                         <br>
                         <p>I also saw significant improvements in my communication skills by talking frequently with
                             native English speakers and learning more idiomatic expressions in two months than in my
                             entire life previously.</p>
                         <br>
-                        <p>This short summer research experience made me understand that challenges themselves are not
-                            difficult, but the real challenge for me is to constantly adjust my attitude towards them.
-                            And I made it!
+                        <p>This short research experience made me understand that the challenges themselves are not
+                            difficult. The real challenge for me is to constantly adjust my attitude towards them.
+                            And I have done it!
                         </p>
                         <br>
-                        <p> I LIKE THIS CHALLENGE! 😊 </p><br>
+                        <p> I ENJOYED THIS CHALLENGE! 😊 </p><br>
                         <h2>REFERENCE</h2>
                         <p>[1] http://www.bbc.com/news/technology-24299742</p>
                         <p>[2] Myle Ott, Yejin Choi, Claire Cardie, and Jeffrey T Hancock. 2011. Finding deceptive
