@@ -131,11 +131,15 @@
                         <br>
                         <p>
                             To gain an insight into this issue, I conducted research and experiments on the Chinese
-                            restaurant review app, <i>Dianping</i>.</p>
+                            restaurant review app, <i>Dianping</i>, and assisted in the proposal of a novel framework for
+                            online spammer
+                            detection. <b>Further experiments are ongoing for preparing a conference paper. The framework
+                            here is the simplified version of our final one.</b></p>
                         <br><br>
                         <h2>THE CHALLENGE</h2>
                         <h4>The reviews themselves are diverse</h4>
-                        <p>We can find some obvious abnormal patterns that keep coming up, such as “Love this place,” “Great food,” and
+                        <p>We can find some obvious abnormal patterns that keep coming up, such as “Love this place,”
+                            “Great food,” and
                             “Great service.” Actually, there are many additional patterns, such as emotional tendencies,
                             writing habits, or mentioned aspects, which appear in mixed behaviors. It is hard to
                             identify a fixed behavior pattern or decide which characteristic is critical. This makes
@@ -188,7 +192,8 @@
                             models. A graph means connections that connect similar nodes together. It enables nodes to
                             use additional useful information from neighbors to obtain better information.</p>
                         <br>
-                        <p><b>After repeatedly polishing the idea with team members, we proposed a Multi-View Graph Convolutional Network
+                        <p><b>After repeatedly polishing the idea with team members, we proposed a Multi-View Graph
+                            Convolutional Network
                             (GCN) framework for spammer detection.</b></p>
                         <div><img src="images/spammer/framework.png"></div>
                         <br><h4>Neighbor Selection</h4>
@@ -212,7 +217,8 @@
                         </div>
                         <div class="one_half last ">
                             <img src="images/spammer/emotion.png">
-                            <p style="font-size:medium">Reviewers e1, e2, e3 have used IP address 1; e4, e5, e6 have used
+                            <p style="font-size:medium">Reviewers e1, e2, e3 have used IP address 1; e4, e5, e6 have
+                                used
                                 IP address 2; e2 and e4 have used IP address 3.</p>
                         </div>
                         <div class="clear"></div>
@@ -226,7 +232,8 @@
                         <p>Furthermore, I made two amazing findings. In my application scenario, the graph network can
                             leverage the
                             relational ties between users with minimal to no external information. In other words, it
-                            performs better when nodes' attributes are replaced by an adjacency matrix. This change enables
+                            performs better when nodes' attributes are replaced by an adjacency matrix. This change
+                            enables
                             GCN to learn global structural relational information (the whole graph), which further
                             improves the feature utility.</p>
                         <br><h4>Classifier </h4>
@@ -247,7 +254,8 @@
                         <br>
                         <h2>TAKEAWAYS</h2>
                         <p>My work is in Chinese patent pending status, and I am currently conducting further
-                            experiments to prepare a paper for SIGKDD 2020, a top data mining conference. During this experience since summer, my professional
+                            experiments to prepare a paper for SIGKDD 2020, a top data mining conference. During this
+                            experience since summer, my professional
                             skills and self-awareness were greatly improved.</p>
                         <br>
                         <p>Before I went to the United States to do lab research in summer 2019, I was inexperienced in
