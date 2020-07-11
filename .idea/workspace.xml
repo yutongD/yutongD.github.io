@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="743eac1f-3356-4eff-bcc1-622f8e168028" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blossom.html" beforeDir="false" afterPath="$PROJECT_DIR$/blossom.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="106" column="24" lean-forward="true" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
+            <state relative-caret-position="115">
+              <caret line="120" selection-start-line="120" selection-end-line="120" />
             </state>
           </provider>
         </entry>
@@ -41,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mooc.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="202" column="43" lean-forward="true" selection-start-line="202" selection-start-column="43" selection-end-line="202" selection-end-column="43" />
+            <state relative-caret-position="4040">
+              <caret line="202" column="43" selection-start-line="202" selection-start-column="43" selection-end-line="202" selection-end-column="43" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -51,21 +52,21 @@
                 <element signature="n#style#0;n#div#0;n#h1#0;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#h1#0;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#4867#4908#0" expanded="true" />
-                <element signature="e#6460#6501#0" expanded="true" />
-                <element signature="e#6700#6740#0" expanded="true" />
-                <element signature="e#7182#7202#0" expanded="true" />
-                <element signature="e#9131#9168#0" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#6;n#div#0;n#div#2;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#7;n#div#0;n#div#2;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#div#2;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#10;n#div#0;n#div#2;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blossom.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="419" column="15" lean-forward="true" selection-start-line="419" selection-start-column="15" selection-end-line="419" selection-end-column="15" />
+            <state relative-caret-position="220">
+              <caret line="107" column="53" selection-start-line="107" selection-start-column="53" selection-end-line="107" selection-end-column="53" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -159,12 +160,12 @@
         <option value="$PROJECT_DIR$/style_mooc.css" />
         <option value="$PROJECT_DIR$/spammer.html" />
         <option value="$PROJECT_DIR$/mooc.html" />
-        <option value="$PROJECT_DIR$/blossom.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/blossom.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="678" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -175,6 +176,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -208,7 +210,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -272,18 +273,19 @@
       <workItem from="1579489077669" duration="799000" />
       <workItem from="1585300339487" duration="60000" />
       <workItem from="1591433624538" duration="765000" />
-      <workItem from="1594105274724" duration="1668000" />
+      <workItem from="1594105274724" duration="2477000" />
+      <workItem from="1594453051071" duration="97000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162374000" />
+    <option name="totallyTimeSpent" value="163280000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15733737" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16263238" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -413,6 +415,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4040">
+          <caret line="202" column="43" selection-start-line="202" selection-start-column="43" selection-end-line="202" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#h1#0;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#h1#0;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#6;n#div#0;n#div#2;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#7;n#div#0;n#div#2;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#div#2;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#10;n#div#0;n#div#2;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spammer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2720">
@@ -437,41 +467,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mooc.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="202" column="43" lean-forward="true" selection-start-line="202" selection-start-column="43" selection-end-line="202" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#h1#0;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#h1#0;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#4867#4908#0" expanded="true" />
-            <element signature="e#6460#6501#0" expanded="true" />
-            <element signature="e#6700#6740#0" expanded="true" />
-            <element signature="e#7182#7202#0" expanded="true" />
-            <element signature="e#9131#9168#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blossom.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="419" column="15" lean-forward="true" selection-start-line="419" selection-start-column="15" selection-end-line="419" selection-end-column="15" />
+        <state relative-caret-position="220">
+          <caret line="107" column="53" selection-start-line="107" selection-start-column="53" selection-end-line="107" selection-end-column="53" />
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="106" column="24" lean-forward="true" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
         </state>
       </provider>
     </entry>
