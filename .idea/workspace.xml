@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="743eac1f-3356-4eff-bcc1-622f8e168028" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blossom.html" beforeDir="false" afterPath="$PROJECT_DIR$/blossom.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/images/blossom/persona2.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/images/blossom/persona2.PNG" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -166,7 +165,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="678" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -275,12 +274,12 @@
       <workItem from="1585300339487" duration="60000" />
       <workItem from="1591433624538" duration="765000" />
       <workItem from="1594105274724" duration="2477000" />
-      <workItem from="1594453051071" duration="781000" />
+      <workItem from="1594453051071" duration="1133000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163964000" />
+    <option name="totallyTimeSpent" value="164316000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
