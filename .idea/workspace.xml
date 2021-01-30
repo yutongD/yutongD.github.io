@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="743eac1f-3356-4eff-bcc1-622f8e168028" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diantv.html" beforeDir="false" afterPath="$PROJECT_DIR$/diantv.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/diantv/competition.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/diantv/competition.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/diantv/design_indication.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/diantv/design_indication.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/diantv/persona1.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/images/diantv/persona1.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/diantv/persona2.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/images/diantv/persona2.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="92" column="59" lean-forward="true" selection-start-line="92" selection-start-column="59" selection-end-line="92" selection-end-column="59" />
+            <state relative-caret-position="92">
+              <caret line="111" column="52" selection-start-line="111" selection-start-column="52" selection-end-line="111" selection-end-column="52" />
               <folding>
                 <element signature="n#style#0;n#div#4;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -142,7 +137,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="678" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -241,12 +236,12 @@
       <workItem from="1611805632725" duration="10234000" />
       <workItem from="1611837281183" duration="13073000" />
       <workItem from="1611889999627" duration="18395000" />
-      <workItem from="1611986556991" duration="2677000" />
+      <workItem from="1611986556991" duration="4422000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231354000" />
+    <option name="totallyTimeSpent" value="233099000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -261,7 +256,7 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1785174" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1785174" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -278,7 +273,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49092284" visible="true" weight="0.44354838" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49092284" visible="true" weight="0.44354838" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50907713" side_tool="true" visible="true" weight="0.44354838" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -480,8 +475,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="92" column="59" lean-forward="true" selection-start-line="92" selection-start-column="59" selection-end-line="92" selection-end-column="59" />
+        <state relative-caret-position="92">
+          <caret line="111" column="52" selection-start-line="111" selection-start-column="52" selection-end-line="111" selection-end-column="52" />
           <folding>
             <element signature="n#style#0;n#div#4;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
