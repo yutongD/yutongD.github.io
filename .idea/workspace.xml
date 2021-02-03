@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="743eac1f-3356-4eff-bcc1-622f8e168028" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blossom.html" beforeDir="false" afterPath="$PROJECT_DIR$/blossom.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mooc.html" beforeDir="false" afterPath="$PROJECT_DIR$/mooc.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spammer.html" beforeDir="false" afterPath="$PROJECT_DIR$/spammer.html" afterDir="false" />
     </list>
@@ -47,28 +46,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mooc.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="80" column="54" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="54" />
+            <state relative-caret-position="120">
+              <caret line="191" column="116" lean-forward="true" selection-start-line="189" selection-start-column="24" selection-end-line="191" selection-end-column="116" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#article#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h1#0;n#div#0;n#article#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#h1#0;n#div#0;n#article#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#h1#0;n#div#0;n#article#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#4428#4454#0" expanded="true" />
+                <element signature="e#9244#9323#0" expanded="true" />
+                <element signature="e#9358#9440#0" expanded="true" />
+                <element signature="e#12150#12154#0" expanded="true" />
+                <element signature="e#13113#13117#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/diantv.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="79" column="29" lean-forward="true" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
+            <state relative-caret-position="176">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -98,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blossom.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="74" column="86" lean-forward="true" selection-start-line="74" selection-start-column="86" selection-end-line="74" selection-end-column="86" />
+            <state relative-caret-position="160">
+              <caret line="79" column="44" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -110,20 +106,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spammer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="79" column="54" selection-start-line="79" selection-start-column="54" selection-end-line="79" selection-end-column="54" />
+            <state relative-caret-position="172">
+              <caret line="124" column="97" selection-start-line="124" selection-start-column="97" selection-end-line="124" selection-end-column="97" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h1#0;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#h1#0;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#h1#0;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#4769#4775#0" expanded="true" />
+                <element signature="e#16208#16287#0" expanded="true" />
+                <element signature="e#16224#16306#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -187,10 +181,10 @@
         <option value="$USER_HOME$/Desktop/home.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style_mooc.css" />
+        <option value="$PROJECT_DIR$/diantv.html" />
         <option value="$PROJECT_DIR$/mooc.html" />
         <option value="$PROJECT_DIR$/blossom.html" />
         <option value="$PROJECT_DIR$/spammer.html" />
-        <option value="$PROJECT_DIR$/diantv.html" />
       </list>
     </option>
   </component>
@@ -294,12 +288,13 @@
       <workItem from="1611837281183" duration="13073000" />
       <workItem from="1611889999627" duration="18395000" />
       <workItem from="1611986556991" duration="5741000" />
-      <workItem from="1612065196199" duration="3050000" />
+      <workItem from="1612065196199" duration="4282000" />
+      <workItem from="1612336503219" duration="4468000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237468000" />
+    <option name="totallyTimeSpent" value="243168000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -331,8 +326,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49016643" weight="0.44354838" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5098336" side_tool="true" weight="0.44354838" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.48940998" visible="true" weight="0.44354838" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="11" sideWeight="0.51059" side_tool="true" visible="true" weight="0.44354838" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -461,16 +456,6 @@
     <entry file="file://$PROJECT_DIR$/css/carouFredSel.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1580">
-          <caret line="79" column="60" selection-start-line="79" selection-start-column="60" selection-end-line="79" selection-end-column="60" />
-          <folding>
-            <element signature="n#style#0;n#div#4;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -485,58 +470,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mooc.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="80" column="54" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="54" />
+        <state relative-caret-position="1580">
+          <caret line="79" column="60" selection-start-line="79" selection-start-column="60" selection-end-line="79" selection-end-column="60" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#article#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#article#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#h1#0;n#div#0;n#article#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#h1#0;n#div#0;n#article#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#article#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#4428#4454#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spammer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="79" column="54" selection-start-line="79" selection-start-column="54" selection-end-line="79" selection-end-column="54" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#h1#0;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#h1#0;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blossom.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="74" column="86" lean-forward="true" selection-start-line="74" selection-start-column="86" selection-end-line="74" selection-end-column="86" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/diantv.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="79" column="29" lean-forward="true" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
+        <state relative-caret-position="176">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -558,6 +505,49 @@
             <element signature="n#style#0;n#p#0;n#div#0;n#div#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#8;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#article#0;n#div#8;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mooc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="191" column="116" lean-forward="true" selection-start-line="189" selection-start-column="24" selection-end-line="191" selection-end-column="116" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#9244#9323#0" expanded="true" />
+            <element signature="e#9358#9440#0" expanded="true" />
+            <element signature="e#12150#12154#0" expanded="true" />
+            <element signature="e#13113#13117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blossom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="79" column="44" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#7;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spammer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="124" column="97" selection-start-line="124" selection-start-column="97" selection-end-line="124" selection-end-column="97" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4769#4775#0" expanded="true" />
+            <element signature="e#16208#16287#0" expanded="true" />
+            <element signature="e#16224#16306#0" expanded="true" />
           </folding>
         </state>
       </provider>

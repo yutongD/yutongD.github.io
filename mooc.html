@@ -166,6 +166,8 @@
                             Angular components, our application can achieve good componentization and reuse.
                             Furthermore, We created RESTful APIs for front-end and back-end interactions. </p>
                         <br>
+
+                        <div class="clear"></div>
                         <div>
                             <div class="one_fourth ">
                                 <img src="images/mooc/icons-code.png" alt="" style="margin-top: 10px"/>
@@ -184,6 +186,121 @@
                             </div>
                         </div>
                         <div class="clear"></div>
+
+                        <h5>Original code sample:</h5>
+                        <div style=" overflow:scroll; width:1000px; height:400px; background-color: #F0EAE9">
+                            <div style="font-size: small;line-height:20px;font-family: Consolas;padding-left: 10px">
+                                package buptspirit.spm.logic;<br><br>
+
+                                import buptspirit.spm.exception.ServiceError;<br>
+                                import buptspirit.spm.exception.ServiceException;<br>
+                                import buptspirit.spm.message.MessageMapper;<br>
+                                import buptspirit.spm.message.SelectedCourseEditingMessage;<br>
+                                import buptspirit.spm.message.SelectedCourseMessage;<br>
+                                import buptspirit.spm.message.SessionMessage;<br>
+                                import buptspirit.spm.persistence.entity.SelectedCourseEntity;<br>
+                                import buptspirit.spm.persistence.facade.CourseFacade;<br>
+                                import buptspirit.spm.persistence.facade.SelectedCourseFacade;<br>
+                                import buptspirit.spm.rest.filter.Role;<br>
+                                import org.apache.logging.log4j.Logger;<br><br>
+
+                                import javax.inject.Inject;<br>
+                                import java.math.BigDecimal;<br>
+                                import java.util.List;<br>
+                                import java.util.stream.Collectors;<br><br>
+
+                                import static buptspirit.spm.persistence.JpaUtility.transactional;<br><br>
+
+                                public class SelectedCourseLogic {<br><br>
+
+                                @Inject<br>
+                                private SelectedCourseFacade selectedCourseFacade;<br><br>
+
+                                @Inject<br>
+                                private MessageMapper messageMapper;<br><br>
+
+                                @Inject<br>
+                                private Logger logger;<br><br>
+
+                                @Inject<br>
+                                private CourseFacade courseFacade;<br><br>
+
+                                public SelectedCourseMessage getScore(int studentId, int courseId) {<br>
+                                SelectedCourseEntity selectedCourseEntity = transactional(<br>
+                                em -> selectedCourseFacade.findByStudentUserIdAndCourseId(em, studentId, courseId),<br>
+                                "failed to find selected course"<br>
+                                );<br>
+                                return transactional(<br>
+                                em -> messageMapper.intoScoreMessage(em, selectedCourseEntity),<br>
+                                "failed to convert course to message"<br>
+                                );<br>
+                                }<br><br>
+
+                                public List&lt;SelectedCourseMessage> getStudentSelectedCourses(String username, SessionMessage sessionMessage) throws ServiceException {<br>
+                                if (!username.equals(sessionMessage.getUserInfo().getUsername()) ||<br>
+                                !sessionMessage.getUserInfo().getRole().equals(Role.Student.getName()))<br>
+                                throw ServiceError.FORBIDDEN.toException();<br>
+                                return transactional(<br>
+                                em -> selectedCourseFacade.findByStudentId(em, sessionMessage.getUserInfo().getId()).stream().map(<br>
+                                score -> messageMapper.intoScoreMessage(em, score)<br>
+                                ).collect(Collectors.toList()),<br>
+                                "failed to find selected courses"<br>
+                                );<br>
+                                }<br><br>
+
+                                public List&lt;SelectedCourseMessage> getTeacherSelectedCourses(int courseId, String username, SessionMessage sessionMessage) throws ServiceException {<br>
+                                    boolean allow = transactional(<br>
+                                    em -> courseFacade.find(em, courseId).getTeacherUserId() == sessionMessage.getUserInfo().getId(),<br>
+                                    "failed to find this course"<br>
+                                    );<br>
+                                    if (!username.equals(sessionMessage.getUserInfo().getUsername()) ||<br>
+                                    !sessionMessage.getUserInfo().getRole().equals(Role.Teacher.getName()) || !allow)
+                                    throw ServiceError.FORBIDDEN.toException();<br>
+                                    return transactional(<br>
+                                    em -> selectedCourseFacade.findByCourseId(em, courseId).stream().map(<br>
+                                    score -> messageMapper.intoScoreMessage(em, score)<br>
+                                    ).collect(Collectors.toList()),<br>
+                                    "failed to find selected courses"<br>
+                                    );<br>
+                                    }<br><br>
+
+                                    public SelectedCourseMessage editSelectedCourse(SelectedCourseEditingMessage selectedCourseEditingMessage,<br>
+                                    int studentUserId, int courseId,<br>
+                                    SessionMessage sessionMessage, String username) throws ServiceException {<br><br>
+
+                                    /* Verify whether a user has permission to enter grades */<br>
+                                    boolean allow = transactional(<br>
+                                    em -> courseFacade.find(em, courseId).getTeacherUserId() == sessionMessage.getUserInfo().getId(),<br>
+                                    "failed to find this course"<br>
+                                    );<br>
+                                    if (!username.equals(sessionMessage.getUserInfo().getUsername()) ||<br>
+                                    !sessionMessage.getUserInfo().getRole().equals(Role.Teacher.getName()) || !allow)<br>
+                                    throw ServiceError.FORBIDDEN.toException();<br>
+                                    SelectedCourseEntity selectedCourseEntity = transactional(<br>
+                                    em -> selectedCourseFacade.findByStudentUserIdAndCourseId(em, studentUserId, courseId),<br>
+                                    "failed to find selected courses"<br>
+                                    );<br><br>
+
+                                    /* Calculate the total score and store it in the database */<br>
+                                    selectedCourseEntity.setAvgOnlineScore(selectedCourseEditingMessage.getAvgOnlineScore());<br>
+                                    selectedCourseEntity.setMidScore(selectedCourseEditingMessage.getMidScore());<br>
+                                    selectedCourseEntity.setFinalScore(selectedCourseEditingMessage.getFinalScore());<br>
+                                    BigDecimal tempAvgOnlineScore = selectedCourseEntity.getAvgOnlineScore().multiply(BigDecimal.valueOf(3, 1));<br>
+                                    BigDecimal tempMidScore = selectedCourseEntity.getMidScore().multiply(BigDecimal.valueOf(1, 1));<br>
+                                    BigDecimal tempFinalScore = selectedCourseEntity.getFinalScore().multiply(BigDecimal.valueOf(6, 1));<br>
+                                    BigDecimal totalScore = tempFinalScore.add(tempAvgOnlineScore.add(tempMidScore)).setScale(1, BigDecimal.ROUND_HALF_DOWN);<br>
+                                    selectedCourseEntity.setTotalScore(totalScore);<br>
+                                    return transactional(<br>
+                                    em -> {<br>
+                                    selectedCourseFacade.edit(em, selectedCourseEntity);<br>
+                                    return messageMapper.intoScoreMessage(em, selectedCourseEntity);<br>
+                                    },<br>
+                                    "failed to add selected course"<br>
+                                    );<br>
+                                    }<br>
+                                    }<br>
+                            </div>
+                        </div>
 
                         <br><br><h4>Stand-up Meetings</h4>
                         <p>I conducted daily scrum meetings to keep track of daily tasks and plan activities for the

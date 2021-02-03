@@ -117,12 +117,13 @@
                 <div class="entry-content">
                     <div class="content-wrap">
                         <h2 style="margin-left: -85px"><img src="https://img.icons8.com/dusk/64/000000/star-of-bethlehem.png"><b>&nbsp;&nbsp;Quick Links</b></h2>
-                        Code:
-                        <a href="https://github.com/safe-graph/DGFraud" target="_blank"><u>DGFraud – a Graph Neural Network (GNN) based toolbox for fraud detection</u></a>
-                        <br>Papers:
+                        <b>Papers:</b><br>
                         CIKM'20 (<a href="https://arxiv.org/pdf/2008.08692.pdf" target="_blank"><u>PDF</u></a>)&nbsp;&&nbsp;
-                        SIGIR'20 (<a href="https://arxiv.org/pdf/2005.00625.pdf" target="_blank"><u>PDF</u></a>)<br><br>
-
+                        SIGIR'20 (<a href="https://arxiv.org/pdf/2005.00625.pdf" target="_blank"><u>PDF</u></a>)<br>
+                        <b>Code:</b><br>
+                        <a href="#codes"><u>In-page code sample</u></a><br>
+                        <a href="https://github.com/safe-graph/DGFraud" target="_blank"><u>Github:&nbsp;DGFraud – a Graph Neural Network (GNN) based toolbox for fraud detection</u></a>
+                        <br><br>
                         <h2><b>INTRODUCTION</b></h2>
                         <p>Customers review many different products and services on websites, e.g., Amazon and Yelp.
                             These reviews influence the decisions of other customers. As a result, spammers have become
@@ -261,6 +262,118 @@
                         <p>(3) It is an end-to-end learning framework. It takes labeled nodes and the graph as the input
                             and output the predicted classes of unlabeled nodes.</p>
                         <br>
+                        <h4 id="codes">Original code sample:</h4>
+                        <div style=" overflow:scroll; width:1000px; height:400px; background-color: #F0EAE9">
+                            <div style="font-size: small;line-height:20px;font-family: Consolas;padding-left: 10px">
+                                '''<br>
+                                This code is due to Yutong Deng (@yutongD), Yingtong Dou (@YingtongDou) and UIC BDSC Lab<br>
+                                DGFraud (A Deep Graph-based Toolbox for Fraud Detection)<br>
+                                https://github.com/safe-graph/DGFraud<br>
+                                '''<br>
+                                import tensorflow as tf<br>
+                                import argparse<br>
+                                import os<br>
+                                import sys<br>
+                                sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), '../..')))<br>
+                                from algorithms.Player2Vec.Player2Vec import Player2Vec<br>
+                                import time<br>
+                                from utils.data_loader import *<br>
+                                from utils.utils import *<br><br>
+
+
+                                # os.environ['CUDA_VISIBLE_DEVICES'] = '0,1'<br><br>
+
+                                # init the common args, expect the model specific args<br>
+                                def arg_parser():<br>
+                                parser = argparse.ArgumentParser()<br>
+                                parser.add_argument('--seed', type=int, default=123, help='Random seed.')<br>
+                                parser.add_argument('--dataset_str', type=str, default='dblp', help="['dblp','example']")<br>
+                                parser.add_argument('--epoch_num', type=int, default=30, help='Number of epochs to train.')<br>
+                                parser.add_argument('--batch_size', type=int, default=1000)<br>
+                                parser.add_argument('--momentum', type=int, default=0.9)<br>
+                                parser.add_argument('--learning_rate', default=0.001, help='the ratio of training set in whole dataset.')<br><br>
+
+                                # GCN args<br>
+                                parser.add_argument('--hidden1', default=16, help='Number of units in GCN hidden layer 1.')<br>
+                                parser.add_argument('--hidden2', default=16, help='Number of units in GCN hidden layer 2.')<br>
+                                parser.add_argument('--gcn_output', default=4, help='gcn output size.')<br><br>
+
+                                args = parser.parse_args()<br>
+                                return args<br><br>
+
+                                def set_env(args):<br>
+                                tf.reset_default_graph()<br>
+                                np.random.seed(args.seed)<br>
+                                tf.set_random_seed(args.seed)<br><br>
+
+                                # get batch data<br>
+                                def get_data(ix, int_batch, train_size):<br>
+                                if ix + int_batch >= train_size:<br>
+                                ix = train_size - int_batch<br>
+                                end = train_size<br>
+                                else:<br>
+                                end = ix + int_batch<br>
+                                return train_data[ix:end], train_label[ix:end]<br><br>
+
+                                def load_data(args):<br>
+                                if args.dataset_str == 'dblp':<br>
+                                adj_list, features, train_data, train_label, test_data, test_label = load_data_dblp()<br>
+                                node_size = features.shape[0]<br>
+                                node_embedding = features.shape[1]<br>
+                                class_size = train_label.shape[1]<br>
+                                train_size = len(train_data)<br>
+                                paras = [node_size, node_embedding, class_size, train_size]<br><br>
+
+                                return adj_list, features, train_data, train_label, test_data, test_label, paras<br><br>
+
+                                def train(args, adj_list, features, train_data, train_label, test_data, test_label, paras):<br>
+                                with tf.Session() as sess:<br>
+                                adj_data = [normalize_adj(adj) for adj in adj_list]<br>
+                                meta_size = len(adj_list)<br>
+                                net = Player2Vec(session=sess, class_size=paras[2], gcn_output1=args.hidden1,<br>
+                                meta=meta_size, nodes=paras[0], embedding=paras[1], encoding=args.gcn_output)<br><br>
+
+                                sess.run(tf.global_variables_initializer())<br>
+                                # net.load(sess)<br><br>
+
+                                t_start = time.clock()<br>
+                                for epoch in range(args.epoch_num):<br>
+                                train_loss = 0<br>
+                                train_acc = 0<br>
+                                count = 0<br>
+                                for index in range(0, paras[3], args.batch_size):<br>
+                                batch_data, batch_label = get_data(index, args.batch_size, paras[3])<br>
+                                loss, acc, pred, prob = net.train(features, adj_data, batch_label,<br>
+                                batch_data, args.learning_rate,<br>
+                                args.momentum)<br><br>
+
+                                print("batch loss: {:.4f}, batch acc: {:.4f}".format(loss, acc))<br>
+                                # print(prob, pred)<br><br>
+
+                                train_loss += loss<br>
+                                train_acc += acc<br>
+                                count += 1<br>
+                                train_loss = train_loss / count<br>
+                                train_acc = train_acc / count<br>
+                                print("epoch{:d} : train_loss: {:.4f}, train_acc: {:.4f}".format(epoch, train_loss, train_acc))<br>
+                                # net.save(sess)<br><br>
+
+                                t_end = time.clock()<br>
+                                print("train time=", "{:.5f}".format(t_end - t_start))<br>
+                                print("Train end!")<br><br>
+
+                                test_acc, test_pred, test_probabilities, test_tags = net.test(features, adj_data, test_label,test_data)<br>
+                                print("test acc:", test_acc)<br><br>
+
+                                if __name__ == "__main__":<br>
+                                args = arg_parser()<br>
+                                set_env(args)<br>
+                                adj_list, features, train_data, train_label, test_data, test_label, paras = load_data(args)<br>
+                                train(args, adj_list, features, train_data, train_label, test_data, test_label, paras)<br>
+
+                            </div>
+                        </div>
+
                         <h2>TAKEAWAYS</h2>
                         <p>Before I went to the United States to do lab research in summer 2019, I was inexperienced in
                             scientific research and had never gone abroad alone. These were challenges for me.
